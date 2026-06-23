@@ -73,6 +73,13 @@ nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(
 .scol h4{font-size:14px;font-family:'JetBrains Mono',monospace;color:var(--teal);margin-bottom:16px;letter-spacing:1px}
 .scol .row{display:flex;gap:8px;flex-wrap:wrap}
 .sk{background:var(--card);border:1px solid var(--line);padding:8px 13px;border-radius:9px;font-size:13px}
+/* experience */
+.role-meta{font-family:'JetBrains Mono',monospace;color:var(--mut);font-size:13px;margin-top:8px}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+@media(max-width:760px){.exp-grid{grid-template-columns:1fr}}
+.exp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.exp .eh{font-family:'JetBrains Mono',monospace;color:var(--teal);font-size:12px;letter-spacing:1.5px;margin-bottom:10px}
+.exp p{color:var(--mut);font-size:14px}
 /* contact */
 .contact{text-align:center}
 .contact h2{margin-bottom:14px}.contact p{color:var(--mut);max-width:520px;margin:0 auto 30px}
@@ -84,7 +91,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;display:flex;justify-cont
 <body>
 <nav><div class="wrap nav">
   <div class="logo"><span class="mark">GZ</span> Gabriel Zolk</div>
-  <div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="links"><a href="#experience">Experience</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div>
   <a href="#contact" class="navcta">Let's talk</a>
 </div></nav>
 
@@ -103,6 +110,18 @@ footer{border-top:1px solid var(--line);padding:30px 0;display:flex;justify-cont
   </div>
 </div></header>
 
+<section id="experience"><div class="wrap">
+  <div class="eyebrow reveal">Experience</div>
+  <h2 class="reveal">Software Engineer @ ZNAP Technologies</h2>
+  <div class="role-meta reveal">Oct 2023 — Present · Remote</div>
+  <p class="mut reveal" style="max-width:740px;margin-top:18px">I work end to end on products for a range of clients — including large companies. I join client meetings, dig into what they actually need, propose the approach, and build it: front end, back end, integrations and AI. I don't just take tickets — I own features from idea to delivery.</p>
+  <div class="exp-grid">
+    <div class="exp reveal"><div class="eh">CLIENT-FACING</div><p>I scope features directly with clients and turn fuzzy needs into shippable product.</p></div>
+    <div class="exp reveal d1"><div class="eh">END-TO-END</div><p>Frontend, backend, integrations and AI — the whole feature, not just a slice.</p></div>
+    <div class="exp reveal d2"><div class="eh">OWNERSHIP</div><p>I suggest, decide and ship to production. Promoted to mid-level (Pleno).</p></div>
+  </div>
+</div></section>
+
 <section id="work"><div class="wrap">
   <div class="eyebrow reveal">Selected work</div>
   <h2 class="reveal">Things I've built</h2>
@@ -116,16 +135,16 @@ footer{border-top:1px solid var(--line);padding:30px 0;display:flex;justify-cont
     <a class="proj reveal" href="https://play.google.com/store/apps/details?id=com.zolk.TicTacMasterXO" target="_blank" rel="noopener"><div class="thumb t3"><img src="tictac.jpeg" alt="TicTacMasterXO on Google Play"><span class="tag">Mobile · Live</span><span class="arr">↗</span></div>
       <div class="pbody"><h3>TicTacMasterXO</h3><p>A game I built and shipped to Google Play, end to end.</p>
         <div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">Play Store</span></div></div></a>
-    <a class="proj reveal d1" href="https://myfs-website.vercel.app/" target="_blank" rel="noopener"><div class="thumb t5"><span class="tag">Web · Client</span><span class="arr">↗</span><span class="big">MYFS</span></div>
+    <a class="proj reveal d1" href="https://myfs-website.vercel.app/" target="_blank" rel="noopener"><div class="thumb t5"><img src="myfs.jpeg" alt="MYFS photographer site"><span class="tag">Web · Client</span><span class="arr">↗</span></div>
       <div class="pbody"><h3>MYFS — photographer's website</h3><p>A real client site for a photographer — clean, image-forward and responsive.</p>
         <div class="chips"><span class="chip">React</span><span class="chip">Responsive</span><span class="chip">Client work</span></div></div></a>
-    <a class="proj reveal" href="https://dogma-1.vercel.app/" target="_blank" rel="noopener"><div class="thumb t6"><span class="tag">Web · Client</span><span class="arr">↗</span><span class="big">Dogma</span></div>
+    <a class="proj reveal" href="https://dogma-1.vercel.app/" target="_blank" rel="noopener"><div class="thumb t6"><img src="dogma-simple-1.jpeg" alt="Dogma client site"><span class="tag">Web · Client</span><span class="arr">↗</span></div>
       <div class="pbody"><h3>Dogma — client build</h3><p>The delivered client version of the Dogma site — simpler, fast and conversion-focused.</p>
         <div class="chips"><span class="chip">Next.js</span><span class="chip">Responsive</span></div></div></a>
-    <a class="proj reveal d1" href="https://pigz-store.vercel.app/" target="_blank" rel="noopener"><div class="thumb t7"><span class="tag">E-commerce</span><span class="arr">↗</span><span class="big">Pigz Store</span></div>
+    <a class="proj reveal d1" href="https://pigz-store.vercel.app/" target="_blank" rel="noopener"><div class="thumb t7"><img src="pigz.jpeg" alt="Pigz Store e-commerce"><span class="tag">E-commerce</span><span class="arr">↗</span></div>
       <div class="pbody"><h3>Pigz Store — e-commerce</h3><p>An e-commerce front built as a technical test for a company.</p>
         <div class="chips"><span class="chip">React</span><span class="chip">E-commerce</span></div></div></a>
-    <a class="proj reveal" href="https://vida-em-dia.vercel.app/" target="_blank" rel="noopener"><div class="thumb t4"><span class="tag">Web · Team</span><span class="arr">↗</span><span class="big">Vida em Dia</span></div>
+    <a class="proj reveal" href="https://vida-em-dia.vercel.app/" target="_blank" rel="noopener"><div class="thumb t4"><img src="vidaemdia.jpeg" alt="Vida em Dia health record app"><span class="tag">Web · Team</span><span class="arr">↗</span></div>
       <div class="pbody"><h3>Vida em Dia — digital health record</h3><p>A digital patient-record app built with a team during my bootcamp.</p>
         <div class="chips"><span class="chip">React</span><span class="chip">Teamwork</span><span class="chip">Healthtech</span></div></div></a>
     <a class="proj reveal d1" href="https://github.com/GabrielZolk" target="_blank" rel="noopener"><div class="thumb t2"><span class="tag">AI · Backend</span><span class="arr">↗</span><span class="big">AI Bots</span></div>
